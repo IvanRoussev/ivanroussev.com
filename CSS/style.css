@@ -1,0 +1,178 @@
+/* 
+COLOR PALLET
+#984447 dark red
+#ADD9F4 baby blue
+#476C9B blue
+#468C98 light blue
+#101419 black
+*/
+
+/*
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Petrona', serif;
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 300px;
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #984447; 
+    padding-top: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 50px 0px 0px 100px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #101419;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    transition: all 700ms;
+    font-size: 30px;
+  }
+  
+.social-links img{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  margin-left: -75px;
+}
+
+
+.social-links{
+  display: flex;
+  margin: 100px 0px 0px;
+}
+
+.contact-el{
+  margin-left: 15px;
+}
+
+  a button{
+    padding:  9px 15px;
+    margin-right: 300px;
+    background-color: #55917F;
+    border: none;
+    border-radius:  10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+
+a button:hover{
+    background-color: #4a7266;
+}
+
+  .name{
+      color: #55917F ;
+      text-decoration:underline #101419;
+      margin-right: 575px;
+      margin-bottom: 10px;
+      font-family: 'Lato', sans-serif;
+  }
+
+  .personal-img{
+    margin-top: 50px;
+  }
+
+  .personal-img img{
+    border-radius:  25px;
+  }
+
+p{
+  font-family: 'Petrona', serif;
+}
+
+  /* Style page content */
+  .main {
+    margin-left: 300px; /* Same as the width of the sidebar */
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.qual-el{
+  display: flex;
+  margin-top: 40px;
+  background-color: #55917F;
+  padding: 50px 50px 50px 50px;
+  border-radius: 25px;
+  font-family: 'Petrona', serif;
+  }
+
+
+.qual-el h3{
+  background-color: #4a7266;
+  padding: 15px 10px 0px 10px;
+  border-radius: 25px;
+  color: #101419;
+  font-weight: bold;
+}
+
+.qual-el div ul:hover{
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-size: 88px;
+  transition: all 500ms;
+  cursor: crosshair;
+}
+
+.qual-el div{
+  margin-left: 50px;
+}
+
+
+
+.pic{
+    height: 500px;
+}
+
+
+  body{
+    background-color: #EBEBD3;
+  }
+
+  .skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon-main {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
