@@ -11,7 +11,7 @@ function Navbar() {
             <a href='google.com'>Home</a>
           </li>
           <li>
-            <a href='google.com'>About</a>
+            <a href='about'>About</a>
           </li>
           <li>
             <a href='google.com'>Projects</a>

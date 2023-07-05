@@ -84,6 +84,12 @@ nav ul li a {
   display: none;
 }
 
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .homepage-img {
   margin: 200px auto auto 200px;
   width: 250px;
@@ -102,17 +108,18 @@ nav ul li a {
 .main-home {
   display: flex;
   flex-direction: row;
+  margin-right: 300px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 75vh;
 }
 
-.about {
-  margin-top: auto;
+.content div {
+  margin-top: 20rem;
   display: flex;
   justify-content: center;
 }
