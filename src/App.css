@@ -122,6 +122,11 @@ nav ul li a {
   padding-top: 20vh;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .content div {
   margin-top: 10rem;
   margin-bottom: 10rem;
