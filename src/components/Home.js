@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className='home-page'>
+      <div className='home-page' id='home'>
         <div className='main-home'>
           <div className=''>
             <img

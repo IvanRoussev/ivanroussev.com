@@ -135,7 +135,6 @@ nav ul li a {
 
 .about {
   margin-top: 30rem;
-  margin-bottom: 10rem;
   display: flex;
   justify-content: center;
 }
@@ -152,11 +151,21 @@ nav ul li a {
   padding-right: 150px;
 }
 
+.skills-icons img {
+  width: 50px; /* Adjust the width and height as needed */
+  height: 50px;
+  margin-right: 10px; /* Add some spacing between the icons */
+}
+
 .projects {
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
   justify-content: center;
+}
+
+.technical-skills-title {
+  margin-top: 5rem;
 }
 
 .contact {

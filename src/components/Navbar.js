@@ -8,16 +8,16 @@ function Navbar() {
       <div className='menu'>
         <ul>
           <li>
-            <a href='google.com'>Home</a>
+            <a href='#home'>Home</a>
           </li>
           <li>
-            <a href='about'>About</a>
+            <a href='#about'>About</a>
           </li>
           <li>
-            <a href='google.com'>Projects</a>
+            <a href='#projects'>Projects</a>
           </li>
           <li>
-            <a href='google.com'>Contact</a>
+            <a href='#contact'>Contact</a>
           </li>
         </ul>
       </div>
