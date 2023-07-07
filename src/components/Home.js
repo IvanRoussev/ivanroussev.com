@@ -15,7 +15,7 @@ function Home() {
             />
           </div>
           <div className='titles'>
-            <h1 className='title-name'>{'Ivan Roussev'}</h1>
+            <h1 className='title-name'>Ivan Roussev</h1>
             <h1 className='software-engineer-title'>
               {'<Software Engineer />'}
             </h1>

@@ -1,9 +1,15 @@
+:root {
+  --main-bg-color: #000000;
+  --orange-text-color: #cf5c36;
+  --beige-text-color: #efc88b;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: black;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 
@@ -97,12 +103,17 @@ nav ul li a {
   border-radius: 20px;
 }
 
+.software-engineer-title {
+  /* color: var(--orange-text-color); */
+}
+
 .titles {
   margin: 200px auto auto 100px;
 }
 
 .title-name {
   font-size: 75px;
+  /* color: var(--beige-text-color); */
 }
 
 .main-home {
@@ -122,12 +133,33 @@ nav ul li a {
   padding-top: 20vh;
 }
 
-.about-content {
+.about {
+  margin-top: 30rem;
+  margin-bottom: 10rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.content div {
+.about-class {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.projects {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
