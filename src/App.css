@@ -31,6 +31,10 @@ header {
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 75vh;
 }
 
 .logo {
@@ -125,13 +129,6 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   margin-right: 300px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 75vh;
 }
 
 .about {
@@ -233,4 +230,28 @@ nav ul li a {
   .menu-icon {
     display: block;
   }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .main-home {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .project-grids {
+    margin-top: 50px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1;
+  }
+
+  .project-box {
+    width: 50px;
+    margin: 10px 10px 10px 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  } */
 }

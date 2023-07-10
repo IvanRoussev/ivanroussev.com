@@ -16,9 +16,9 @@ function About() {
       <div className='about-content'>
         <h1>About</h1>
         <p>
-          I recently graduated from the British Institute of Technology and am
-          excited to begin my career. Throughout my studies, I developed a
-          passion for programming and am constantly seeking new challenges to
+          I recently graduated from the British Columbia Institute of Technology
+          and am excited to begin my career. Throughout my studies, I developed
+          a passion for programming and am constantly seeking new challenges to
           enhance my skills. I thrive in collaborative environments where I can
           work with other developers to solve complex problems and create
           innovative solutions. I recently graduated from the British Institute
@@ -44,6 +44,7 @@ function About() {
             <img src={git_icon} alt='docker' />
           </div>
         </div>
+        <h2>Timeline</h2>
       </div>
     </div>
   );
