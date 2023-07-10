@@ -1,7 +1,15 @@
 function Projects() {
   return (
-    <div className='projects' id='projects'>
-      <h1>Projects</h1>
+    <div className='projects-class'>
+      <div className='projects-title'>
+        <h1>Projects</h1>
+      </div>
+      <div className='project-grids'>
+        <div className='project-box'>0</div>
+        <div className='project-box'>0</div>
+        <div className='project-box'>0</div>
+        <div className='project-box'>0</div>
+      </div>
     </div>
   );
 }
