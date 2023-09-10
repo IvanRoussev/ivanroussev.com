@@ -4,9 +4,9 @@ function Navbar() {
       <div className='menu-icon'>
         <i className='fa fa-bars fa-2x'></i>
       </div>
-      <div className='logo'>LOGO</div>
       <div className='menu'>
         <ul>
+          <div className='logo'>LOGO</div>
           <li>
             <a href='#home'>Home</a>
           </li>

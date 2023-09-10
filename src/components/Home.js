@@ -9,7 +9,7 @@ function Home() {
       <Navbar />
       <div className='home-page' id='home'>
         <div className='main-home'>
-          <div className=''>
+          <div className='ivan-picture'>
             <img
               className='homepage-img'
               src={ivanPic}

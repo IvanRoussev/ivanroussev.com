@@ -39,9 +39,8 @@ header {
 
 .logo {
   line-height: 60px;
-  position: fixed;
   float: left;
-  margin: 16px 46px;
+  margin: 16px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -200,33 +199,7 @@ nav ul li a {
   border-radius: 20px;
 }
 
-@media (max-width: 786px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-  }
-
-  nav ul {
-    max-height: 0px;
-    background: #000;
-  }
-
-  nav.black ul {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 34em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px;
-    text-align: center;
-  }
-
+@media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
@@ -238,20 +211,18 @@ nav ul li a {
   .main-home {
     display: flex;
     flex-direction: column;
-  }
-  /* .project-grids {
-    margin-top: 50px;
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: 1;
+    margin-right: 0px;
   }
 
-  .project-box {
-    width: 50px;
-    margin: 10px 10px 10px 10px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-  } */
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar ul.active {
+    display: block;
+  }
+
+  #navbar li {
+    margin: 10px 0;
+  }
 }
