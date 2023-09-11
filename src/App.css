@@ -84,7 +84,7 @@ nav ul li a {
 .home-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 .homepage-img {
@@ -115,7 +115,7 @@ nav ul li a {
 .main-home {
   display: flex;
   flex-direction: row;
-  margin-right: 300px;
+  align-content: center;
 }
 
 .about {
@@ -188,6 +188,13 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
   .content {
     font-size: 12px;
   }
@@ -195,7 +202,8 @@ nav ul li a {
   .main-home {
     display: flex;
     flex-direction: column;
-    margin-right: 0px;
+    align-content: center;
+    justify-content: center;
   }
 
   #navbar ul {
