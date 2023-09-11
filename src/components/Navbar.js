@@ -3,7 +3,7 @@ function Navbar() {
     <nav>
       <div className='menu'>
         <ul>
-          <div className='logo'>LOGO</div>
+          <div className='logo'>Mr. Roussev</div>
           <li>
             <a href='#home'>Home</a>
           </li>
