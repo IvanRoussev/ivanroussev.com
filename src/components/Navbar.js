@@ -1,9 +1,6 @@
 function Navbar() {
   return (
     <nav>
-      <div className='menu-icon'>
-        <i className='fa fa-bars fa-2x'></i>
-      </div>
       <div className='menu'>
         <ul>
           <div className='logo'>LOGO</div>

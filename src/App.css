@@ -200,10 +200,6 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
   .content {
     font-size: 12px;
   }
