@@ -3,7 +3,6 @@ function Contact() {
     <div className='contact-container' id='contact'>
       <div className='contact-form'>
         <h1 className='title-contact'>Contact Me</h1>
-
         <form action='https://formspree.io/f/xgejbbpd' method='POST'>
           <input
             type='text'
