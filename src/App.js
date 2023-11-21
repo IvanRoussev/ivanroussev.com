@@ -4,7 +4,6 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
-import Layout from './components/Layout.js';
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
             <Contact />
           </div>
         </div>
-        <Layout />
       </div>
     </div>
   );
