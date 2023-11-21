@@ -235,7 +235,32 @@ button:hover {
   cursor: pointer;
 }
 
+.dvs-header__trigger {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  .dvs-header__menuItems {
+    display: none;
+  }
+
+  .burger-menu {
+    padding-top: 16px;
+  }
+
+  .dvs-header__menuItems.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+  .dvs-header__trigger {
+    display: block;
+  }
+
   .content {
     margin: 0;
   }
