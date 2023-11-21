@@ -3,14 +3,16 @@ import About from './components/About';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <Home />
-      </header>
+    <div className='app'>
+      <Navbar />
       <div className='main'>
+        <div className='home'>
+          <Home />
+        </div>
         <div className='content'>
           <div className='about'>
             <About />

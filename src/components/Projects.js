@@ -1,15 +1,9 @@
 function Projects() {
   return (
-    <div className='projects-class' id='projects'>
-      {/* <div className='projects-title'>
-        <h1>Projects</h1>
+    <div className='projects' id='projects'>
+      <div className='projects-content'>
+        <h1 className='title'>Projects</h1>
       </div>
-      <div className='project-grids'>
-        <div className='project-box'>0</div>
-        <div className='project-box'>0</div>
-        <div className='project-box'>0</div>
-        <div className='project-box'>0</div>
-      </div> */}
     </div>
   );
 }

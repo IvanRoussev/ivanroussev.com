@@ -9,13 +9,14 @@ import python_icon from '../images/python.svg';
 import react_icon from '../images/react-original.svg';
 import terraform_icon from '../images/terraform.svg';
 import golang_icon from '../images/golang-icon.svg';
+import timeline from '../images/timeline.png';
 
 function About() {
   return (
-    <div className='about-class' id='about'>
+    <div id='about'>
       <div className='about-content'>
-        <h1>About</h1>
-        <p>
+        <h1 className='title'>About</h1>
+        <p className='about-paragraph'>
           I recently graduated from the British Columbia Institute of Technology
           and am excited to begin my career. Throughout my studies, I developed
           a passion for programming and am constantly seeking new challenges to
@@ -45,6 +46,9 @@ function About() {
           </div>
         </div>
         <h2>Timeline</h2>
+        <div className='timeline'>
+          {/* <img src={timeline} alt='timeline' /> */}
+        </div>
       </div>
     </div>
   );
