@@ -8,7 +8,7 @@ function Projects() {
         <div className='project-container'>
           <div className='project'>
             <h3 className='project-headline'>Weather App</h3>
-            <a href='github'>
+            <a href='https://github.com/IvanRoussev/weatherApp.git'>
               <img src={git} alt='git' className='project-git-link' />
             </a>
             <button className='view-project-button'>
@@ -17,7 +17,7 @@ function Projects() {
           </div>
           <div className='project'>
             <h3 className='project-headline'>Movies App</h3>
-            <a href='github'>
+            <a href='https://github.com/IvanRoussev/MoviesApp'>
               <img src={git} alt='git' className='project-git-link' />
             </a>
             <button className='view-project-button'>
@@ -26,7 +26,7 @@ function Projects() {
           </div>
           <div className='project'>
             <h3 className='project-headline'>Discord Bot</h3>
-            <a href='https://github.com/IvanRoussev?tab=repositories'>
+            <a href='https://github.com/IvanRoussev/Discord-bot'>
               <img src={git} alt='git' className='project-git-link' />
             </a>
             <button className='view-project-button'>
