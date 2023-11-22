@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='app'>
+    <div className='app' id='app'>
       <Navbar />
       <div className='main'>
         <div className='home'>

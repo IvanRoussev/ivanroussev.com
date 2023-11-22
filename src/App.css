@@ -1,15 +1,16 @@
 :root {
-  --black: #353535;
+  /* --black: #2b2d42;
   --lighter-black: #5f5e5e;
   --white: #ffffff;
   --grey: #d9d9d9;
   --navy: #284b63;
   --green: #3c6e71;
-  --salmon: #c16e70;
-}
-
-.app {
-  padding: 5px 0px 0px 0px;
+  --salmon: #c16e70; */
+  --black: #2b2d42;
+  --grey: #8d99ae;
+  --white: #edf2f4;
+  --light-red: #ef233c;
+  --dark-red: #d90429;
 }
 
 html,
@@ -17,11 +18,15 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--grey);
 }
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  color: var(--black);
 }
 
 .logo {
@@ -38,6 +43,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(./images/pattern.svg) no-repeat center;
+  background-size: cover;
+}
+
+.homepage-icon {
+  width: 48px;
 }
 
 nav {
@@ -64,7 +75,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-size: 16px;
-  color: var(--green);
+  color: var(--black);
 }
 
 /* .download-cv-button {
@@ -93,13 +104,8 @@ nav ul li a {
   margin-right: 5rem;
 }
 
-.social-icons img {
-  margin: 20px 5px 0px 5px;
-  width: 50px;
-}
-
 .software-engineer-title {
-  color: var(--green);
+  color: var(--black);
 }
 
 .titles {
@@ -119,18 +125,22 @@ nav ul li a {
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.about {
-  padding: 0px 50px 5vh 5vh;
-  background-color: var(--lighter-black);
-  height: 100vh;
+.about-content h1 {
+  color: var(--black);
+}
+.about-paragraph-container {
+  width: 65%;
 }
 
-.skills-icons img {
-  width: 50px; /* Adjust the width and height as needed */
-  height: 50px;
+.about {
+  padding-top: 2rem;
+  background-color: var(--white);
 }
 
 .projects-content {
@@ -148,6 +158,8 @@ nav ul li a {
 .contact-container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about-paragraph {
@@ -155,7 +167,7 @@ nav ul li a {
 }
 
 .title {
-  color: var(--white);
+  color: var(--black);
 }
 .title-contact {
   display: flex;
@@ -165,10 +177,6 @@ nav ul li a {
 
 .contact {
   height: 100vh;
-}
-
-.contact-container {
-  background-color: var(--lighter-black);
 }
 
 .contact-button {
@@ -239,6 +247,20 @@ button:hover {
   display: none;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills div {
+  margin: 10px 10px 10px 10px;
+}
+
+.projects {
+  background: url(./images/pattern-background.svg) no-repeat center;
+  background-size: cover;
+}
+
 @media (max-width: 800px) {
   .dvs-header__menuItems {
     display: none;
@@ -297,6 +319,7 @@ button:hover {
 
   .title {
     font-size: xx-large;
+    color: var(--black);
   }
 
   .about-paragraph {
@@ -309,5 +332,9 @@ button:hover {
 
   .software-engineer-title {
     font-size: medium;
+  }
+
+  .skills {
+    flex-direction: column;
   }
 }

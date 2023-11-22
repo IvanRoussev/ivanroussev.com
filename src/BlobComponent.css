@@ -1,0 +1,14 @@
+/* .blob-container {
+  position: relative;
+  width: 80vh;
+  height: 80vh;
+  background: url(./images/about-background-blob.svg) no-repeat center;
+  background-position: center;
+}
+
+.blob-svg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+} */

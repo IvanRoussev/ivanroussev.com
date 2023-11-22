@@ -14,10 +14,18 @@ function Home() {
           <h1 className='software-engineer-title'>{'<Software Engineer />'}</h1>
           <div className='social-icons'>
             <a href='https://github.com/IvanRoussev' target='_blank'>
-              <img src={githubIcon} alt='github-icons' />
+              <img
+                className='homepage-icon'
+                src={githubIcon}
+                alt='github-icons'
+              />
             </a>
             <a href='https://www.linkedin.com/in/ivan-roussev/' target='_blank'>
-              <img src={linkedinIcon} alt='linkedin-icons' />
+              <img
+                className='homepage-icon'
+                src={linkedinIcon}
+                alt='linkedin-icons'
+              />
             </a>
             {/* <button className=''>
               <a className='download-cv-button'>Download CV</a>

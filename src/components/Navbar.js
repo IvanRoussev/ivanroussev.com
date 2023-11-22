@@ -18,7 +18,7 @@ function Navbar() {
             </li>
             <div className={`dvs-header__menuItems ${isOpen ? 'is-open' : ''}`}>
               <li>
-                <a href='#home'>Home</a>
+                <a href='#app'>Home</a>
               </li>
               <li>
                 <a href='#about'>About</a>
