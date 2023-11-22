@@ -1,4 +1,4 @@
-import BlobComponent from './BlobComponent';
+import Skills from './Skills';
 import Timeline from './Timeline';
 
 function About() {
@@ -25,7 +25,7 @@ function About() {
         <div>
           <h3 className='technical-skills-title'>My Technical Skills</h3>
           <div className='blob'>
-            <BlobComponent />
+            <Skills />
           </div>
         </div>
         {/* <h2>Timeline</h2>

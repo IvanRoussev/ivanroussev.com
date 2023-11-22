@@ -17,7 +17,7 @@ function Navbar() {
           </div>
           <div className='burger-menu'>
             <li className='dvs-header__trigger' onClick={toggleMenu}>
-              <img src={hamburgerStack} alt='stack' />
+              <img src={hamburgerStack} alt='stack' className='burger-stack' />
             </li>
             <div className={`dvs-header__menuItems ${isOpen ? 'is-open' : ''}`}>
               <li>

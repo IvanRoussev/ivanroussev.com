@@ -14,9 +14,10 @@ import Docker from '../images/icons8-docker.svg';
 import Kube from '../images/icons8-kubernetes.svg';
 import iconReact from '../images/icons8-react.svg';
 import terraform from '../images/icons8-terraform.svg';
+import linux from '../images/icons8-linux-48.png';
 import '../BlobComponent.css';
 
-const BlobComponent = () => {
+const Skills = () => {
   return (
     <div className='blob-container'>
       <div className='skills'>
@@ -53,9 +54,13 @@ const BlobComponent = () => {
           <img src={Jenkins} />
           <img src={Gitlab} />
         </div>
+        <div className='os'>
+          <h3>OS</h3>
+          <img src={linux} alt='linux' className='linux-image' />
+        </div>
       </div>
     </div>
   );
 };
 
-export default BlobComponent;
+export default Skills;

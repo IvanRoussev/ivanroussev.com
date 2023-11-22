@@ -89,6 +89,7 @@ nav ul li a {
   text-align: center;
   width: 7rem;
   height: 2rem;
+  margin-left: 5px;
 }
 
 .cv-button:hover {
@@ -98,6 +99,11 @@ nav ul li a {
 .social-icons {
   display: flex;
   align-items: center;
+}
+
+.linux-image {
+  width: 48px;
+  height: auto;
 }
 
 .content {
@@ -319,17 +325,23 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+  .logo-image {
+    width: 10rem;
+  }
+
   .dvs-header__menuItems {
     display: none;
   }
 
-  .burger-menu {
-    padding-top: 16px;
+  .burger-stack {
+    width: 2rem;
+    margin: 16px;
   }
 
   .dvs-header__menuItems.is-open {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
   nav ul li {
     display: inline-block;
@@ -345,7 +357,7 @@ button:hover {
   }
 
   .main-home {
-    padding-top: 10rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -370,7 +382,6 @@ button:hover {
   .homepage-img {
     width: 10rem;
     border-radius: 50%;
-    margin-bottom: 5rem;
     margin-right: 0;
   }
 
