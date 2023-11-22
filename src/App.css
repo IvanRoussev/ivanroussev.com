@@ -11,6 +11,8 @@
   --white: #edf2f4;
   --light-red: #ef233c;
   --dark-red: #d90429;
+  --project-button: #456990;
+  --project-headline: #2a4158;
 }
 
 html,
@@ -18,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: var(--grey);
+  background-color: #909cb0;
 }
 
 body {
@@ -147,10 +149,6 @@ nav ul li a {
   text-align: center;
 }
 
-.projects {
-  height: 100vh;
-}
-
 .technical-skills-title {
   margin-top: 5rem;
 }
@@ -255,8 +253,53 @@ button:hover {
 }
 
 .projects {
+  height: 100vh;
   background: url(./images/pattern-background.svg) no-repeat center;
   background-size: cover;
+}
+.project-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project {
+  position: relative;
+  border-radius: 18px;
+  width: 20rem;
+  height: 25rem;
+  background-color: var(--black);
+  opacity: 50%;
+}
+.project-headline {
+  color: black;
+}
+
+.project:hover {
+  opacity: 70%;
+  transition-delay: 1s;
+  transition: ease-in-out 0.5s;
+}
+
+.view-project-button {
+  width: 5rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--project-button);
+}
+.view-project-button:hover {
+  transition-delay: 1s;
+  transition: ease-in-out 0.5s;
+  background-color: #5bd183;
+}
+.project-git-link {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 6rem;
 }
 
 @media (max-width: 800px) {
@@ -334,5 +377,22 @@ button:hover {
 
   .skills {
     flex-direction: column;
+  }
+
+  .project-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects {
+    height: auto;
+  }
+  .project {
+    width: 15rem;
+    height: 20rem;
+    background-color: var(--black);
+    opacity: 50%;
+    margin-bottom: 50px;
   }
 }
