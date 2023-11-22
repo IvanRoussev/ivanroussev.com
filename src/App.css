@@ -181,10 +181,8 @@ nav ul li a {
 
 .contact-button {
   background-color: var(--navy);
-  border-radius: 7px;
   border: none;
   text-align: center;
-  padding: 10px 25px;
 }
 
 .timeline img {
