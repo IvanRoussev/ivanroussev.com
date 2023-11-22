@@ -106,6 +106,10 @@ nav ul li a {
   height: auto;
 }
 
+.download-cv-button {
+  color: var(--black);
+}
+
 .content {
   font-size: 20px;
   text-align: justify;
