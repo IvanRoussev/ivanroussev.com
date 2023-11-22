@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import hamburgerStack from '../images/icons8-hamburger-menu.svg';
+import logo from '../images/ivan-roussev-logo.png';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,9 @@ function Navbar() {
     <nav>
       <div className='menu'>
         <ul>
-          <div className='logo'>Mr. Roussev</div>
+          <div className='logo'>
+            <img className='logo-image' src={logo} alt='Ivan Roussev' />
+          </div>
           <div className='burger-menu'>
             <li className='dvs-header__trigger' onClick={toggleMenu}>
               <img src={hamburgerStack} alt='stack' />

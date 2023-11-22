@@ -13,6 +13,7 @@
   --dark-red: #d90429;
   --project-button: #456990;
   --project-headline: #2a4158;
+  --orange-download-orange: #fca311;
 }
 
 html,
@@ -31,13 +32,14 @@ h1 {
   color: var(--black);
 }
 
+.logo-image {
+  width: 15rem;
+}
+
 .logo {
   line-height: 60px;
   float: left;
   margin: 16px;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
 }
 
 .home {
@@ -80,13 +82,23 @@ nav ul li a {
   color: var(--black);
 }
 
-/* .download-cv-button {
-  background-color: var(--navy);
+.cv-button {
+  background-color: var(--orange-download-orange);
   border-radius: 7px;
   border: none;
   text-align: center;
-  padding: 10px 25px;
-} */
+  width: 7rem;
+  height: 2rem;
+}
+
+.cv-button:hover {
+  transition: ease-in-out 0.5s;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
 
 .content {
   font-size: 20px;
@@ -175,6 +187,10 @@ nav ul li a {
 
 .contact {
   height: 100vh;
+}
+
+.title-contact {
+  color: var(--black);
 }
 
 .contact-button {

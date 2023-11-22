@@ -27,9 +27,9 @@ function Home() {
                 alt='linkedin-icons'
               />
             </a>
-            {/* <button className=''>
+            <button className='cv-button'>
               <a className='download-cv-button'>Download CV</a>
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
