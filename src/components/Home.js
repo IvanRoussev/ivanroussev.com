@@ -53,7 +53,13 @@ function Home() {
               />
             </a>
             <button className='cv-button'>
-              <a className='download-cv-button'>Download CV</a>
+              <a
+                className='download-cv-button'
+                href='../ivanroussev-resume-2024.pdf'
+                download='ivanroussev-cv.pdf'
+              >
+                Download CV
+              </a>
             </button>
           </div>
         </div>

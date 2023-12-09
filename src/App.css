@@ -104,6 +104,7 @@ nav ul li a {
 
 .download-cv-button {
   color: var(--black);
+  text-decoration: none;
 }
 
 .content {
@@ -122,6 +123,7 @@ nav ul li a {
   width: 20rem;
   border-radius: 15%;
   margin-right: 5rem;
+  animation: swing-image 0.5s linear;
 }
 
 .software-engineer-title {
@@ -376,6 +378,8 @@ button:hover {
     width: 10rem;
     border-radius: 50%;
     margin-right: 0;
+    opacity: 0;
+    animation: drop-image 0.5s linear forwards;
   }
 
   .title {
@@ -412,5 +416,29 @@ button:hover {
     width: 15rem;
     height: 20rem;
     margin-bottom: 50px;
+  }
+}
+
+@keyframes drop-image {
+  from {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes swing-image {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
