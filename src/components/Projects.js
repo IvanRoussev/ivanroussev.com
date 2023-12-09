@@ -1,4 +1,6 @@
-import git from '../images/code-fork.png';
+import WeatherAppImage from '../images/WeatherAppImage.png';
+import MoviesApp from '../images/ExploreMoviesImage.png';
+import CarImage from '../images/AutoMaintenanceImage.png';
 
 function Projects() {
   return (
@@ -7,31 +9,32 @@ function Projects() {
         <h1 className='title'>Projects</h1>
         <div className='project-container'>
           <div className='project'>
+            <h3 className='project-headline'>Car Maintenance Logger</h3>
+            <div className='project-image'>
+              <img src={CarImage} alt='car-maintenance-app-image' />
+            </div>
+            <a href='https://github.com/IvanRoussev/AutoCare'>
+              <button className='view-sourcecode-button'> Source Code</button>
+            </a>
+          </div>
+          <div className='project'>
+            <h3 className='project-headline'>Explore Movies App</h3>
+            <div className='project-image'>
+              <img src={MoviesApp} alt='movies-app-image' />
+            </div>
+            <a href='https://github.com/IvanRoussev/ExploreMoviesApp'>
+              <button className='view-sourcecode-button'> Source Code</button>
+            </a>
+          </div>
+          <div className='project'>
             <h3 className='project-headline'>Weather App</h3>
-            <a href='https://github.com/IvanRoussev/weatherApp.git'>
-              <img src={git} alt='git' className='project-git-link' />
+            <div className='project-image'>
+              <img src={WeatherAppImage} alt='weather-app-image' />
+            </div>
+
+            <a href='https://github.com/IvanRoussev/weatherApp'>
+              <button className='view-sourcecode-button'> Source Code</button>
             </a>
-            <button className='view-project-button'>
-              <a>View Live</a>
-            </button>
-          </div>
-          <div className='project'>
-            <h3 className='project-headline'>Movies App</h3>
-            <a href='https://github.com/IvanRoussev/MoviesApp'>
-              <img src={git} alt='git' className='project-git-link' />
-            </a>
-            <button className='view-project-button'>
-              <a>View Live</a>
-            </button>
-          </div>
-          <div className='project'>
-            <h3 className='project-headline'>Discord Bot</h3>
-            <a href='https://github.com/IvanRoussev/Discord-bot'>
-              <img src={git} alt='git' className='project-git-link' />
-            </a>
-            <button className='view-project-button'>
-              <a>View Live</a>
-            </button>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ h1 {
   color: var(--black);
 }
 
-.logo-image {
+.header-title {
   width: 15rem;
 }
 
@@ -49,10 +49,6 @@ h1 {
   justify-content: center;
   background: url(./images/pattern.svg) no-repeat center;
   background-size: cover;
-}
-
-.homepage-icon {
-  width: 48px;
 }
 
 nav {
@@ -124,7 +120,7 @@ nav ul li a {
 
 .homepage-img {
   width: 20rem;
-  border-radius: 10%;
+  border-radius: 15%;
   margin-right: 5rem;
 }
 
@@ -139,6 +135,9 @@ nav ul li a {
 
 .title-name {
   font-size: 75px;
+}
+.homepage-icon {
+  width: 48px;
 }
 
 .main-home {
@@ -261,7 +260,6 @@ textarea:focus-within {
 }
 
 button:hover {
-  opacity: 80%;
   cursor: pointer;
 }
 
@@ -292,61 +290,52 @@ button:hover {
 .project {
   position: relative;
   border-radius: 18px;
-  width: 20rem;
+  margin: 10px;
+  width: 30rem;
   height: 25rem;
-  background-color: var(--black);
-  opacity: 50%;
 }
 .project-headline {
-  color: black;
+  color: var(--project-headline);
 }
 
-.project:hover {
-  opacity: 70%;
-  transition-delay: 1s;
-  transition: ease-in-out 0.5s;
-}
-
-.view-project-button {
+.view-sourcecode-button {
+  margin-top: 20px;
   width: 5rem;
   height: 2.5rem;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
   border: none;
-  border-radius: 15px;
-  background-color: var(--project-button);
+  border-radius: 5px;
+  background-color: var(--orange-download-orange);
 }
-.view-project-button:hover {
-  transition-delay: 1s;
-  transition: ease-in-out 0.5s;
-  background-color: #5bd183;
+
+.view-sourcecode-button a {
+  text-decoration: none;
 }
-.project-git-link {
-  position: absolute;
-  bottom: 0.2rem;
-  right: 6rem;
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 800px) {
-  .logo-image {
-    width: 10rem;
-  }
-
   .dvs-header__menuItems {
     display: none;
   }
 
   .burger-stack {
     width: 2rem;
-    margin: 16px;
+    margin-right: 20px;
   }
 
   .dvs-header__menuItems.is-open {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: last baseline;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
+
   nav ul li {
     display: inline-block;
     padding: 0px 20px;
@@ -422,8 +411,6 @@ button:hover {
   .project {
     width: 15rem;
     height: 20rem;
-    background-color: var(--black);
-    opacity: 50%;
     margin-bottom: 50px;
   }
 }

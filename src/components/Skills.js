@@ -15,6 +15,7 @@ import Kube from '../images/icons8-kubernetes.svg';
 import iconReact from '../images/icons8-react.svg';
 import terraform from '../images/icons8-terraform.svg';
 import linux from '../images/icons8-linux-48.png';
+import PostgreSQL from '../images/icons8-postgres.svg'
 import '../BlobComponent.css';
 
 const Skills = () => {
@@ -43,6 +44,7 @@ const Skills = () => {
           <h3>Databases</h3>
           <img src={Mysql} />
           <img src={Mongo} />
+          <img src={PostgreSQL} />
         </div>
         <div className='containerization'>
           <h3>Containerization</h3>
@@ -53,6 +55,7 @@ const Skills = () => {
           <h3>CI/CD</h3>
           <img src={Jenkins} />
           <img src={Gitlab} />
+          <img src={Git} />
         </div>
         <div className='os'>
           <h3>OS</h3>

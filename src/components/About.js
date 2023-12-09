@@ -8,13 +8,12 @@ function About() {
         <h1 className='title'>About</h1>
         <div className='about-paragraph-container'>
           <p className='about-paragraph'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Passionate programmer with a knack for turning ideas into practical
+            code. My curiosity is my driving force, constantly pushing me
+            towards new challenges and learning opportunities. I have always had
+            a love for building things from lego as a kid to constructing highly
+            scalable software solutions today. Also a Avid Dark mode user, light
+            mode attracts bugs!
           </p>
         </div>
         <div>
