@@ -5,18 +5,29 @@ import React, { useEffect, useState } from 'react';
 
 function Home() {
   const [title, setTitle] = useState('');
-  const originalTitle = `<Software Engineer />`;
+  const [cursorVisible, setCursorVisible] = useState(true);
+  const originalTitle = '<Software Engineer/>';
+  const cursorChar = '|';
+
   useEffect(() => {
     let index = 0;
     const titleInterval = setInterval(() => {
-      setTitle(originalTitle.substring(0, index));
+      setTitle(
+        originalTitle.substring(0, index) + (cursorVisible ? cursorChar : '')
+      );
+      setCursorVisible((prev) => !prev); // Toggle cursor visibility
       index++;
+
       if (index > originalTitle.length) {
         clearInterval(titleInterval);
+        setCursorVisible(false); // Ensure cursor is not visible when typing is complete
       }
     }, 100); // Adjust the interval time as needed
-    return () => clearInterval(titleInterval); // Cleanup on component unmount
-  }, []);
+
+    // Clear the interval on component unmount
+    return () => clearInterval(titleInterval);
+  }, [originalTitle]);
+
   return (
     <div className='home-container' id='home'>
       <div className='main-home'>
@@ -27,14 +38,14 @@ function Home() {
           <h1 className='title-name'>Ivan Roussev</h1>
           <h1 className='software-engineer-title'>{title}</h1>
           <div className='social-icons'>
-            <a href='https://github.com/IvanRoussev' target='_blank' rel="noreferrer">
+            <a href='https://github.com/IvanRoussev' rel='noreferrer'>
               <img
                 className='homepage-icon'
                 src={githubIcon}
                 alt='github-icons'
               />
             </a>
-            <a href='https://www.linkedin.com/in/ivan-roussev/' target='_blank'>
+            <a href='https://www.linkedin.com/in/ivan-roussev/'>
               <img
                 className='homepage-icon'
                 src={linkedinIcon}

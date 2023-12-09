@@ -1,5 +1,4 @@
 import Skills from './Skills';
-import Timeline from './Timeline';
 
 function About() {
   return (

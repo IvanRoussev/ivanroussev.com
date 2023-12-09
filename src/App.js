@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Contact />
           </div>
         </div>
+        <SpeedInsights />
       </div>
     </div>
   );
