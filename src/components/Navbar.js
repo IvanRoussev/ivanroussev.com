@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import hamburgerStack from '../images/icons8-hamburger-menu.svg';
+import hamburgerStack from '../images/hamburgermenu.svg';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ function Navbar() {
             </li>
             <div className={`dvs-header__menuItems ${isOpen ? 'is-open' : ''}`}>
               <li>
-                <a href='#' onClick={(e) => scrollToSection('home', e)}>
+                <a href='#' onClick={(e) => scrollToSection('app', e)}>
                   Home
                 </a>
               </li>

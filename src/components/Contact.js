@@ -3,6 +3,7 @@ function Contact() {
     <div className='contact-container' id='contact'>
       <div className='contact-form'>
         <h1 className='title-contact'>Contact Me</h1>
+
         <form action='https://formspree.io/f/xgejbbpd' method='POST'>
           <input
             type='text'
@@ -29,12 +30,12 @@ function Contact() {
             rows='5'
             cols='60'
             name='message'
-            placeholder='Enter Text'
+            placeholder='Send me a message'
             autoComplete='off'
             required
           ></textarea>
           <button className='contact-form-button' type='submit'>
-            Send Message
+            Send
           </button>
         </form>
       </div>

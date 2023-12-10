@@ -1,12 +1,13 @@
-import ivanPic from '../images/ivan.jpeg';
+import ivanPic from '../images/ivan-no-background.png';
 import githubIcon from '../images/github.svg';
 import linkedinIcon from '../images/linkedin.svg';
+import ivanresume from '../ivan-resume-2024.pdf';
 import React, { useEffect, useState } from 'react';
 
 function Home() {
   const [title, setTitle] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
-  const originalTitle = '<Software Engineer/>';
+  const originalTitle = 'Building Things That Truly Matter';
   const cursorChar = '|';
 
   useEffect(() => {
@@ -15,18 +16,21 @@ function Home() {
       setTitle(
         originalTitle.substring(0, index) + (cursorVisible ? cursorChar : '')
       );
-      setCursorVisible((prev) => !prev); // Toggle cursor visibility
+      setCursorVisible((prev) => !prev);
       index++;
 
       if (index > originalTitle.length) {
         clearInterval(titleInterval);
-        setCursorVisible(false); // Ensure cursor is not visible when typing is complete
+        setCursorVisible(false);
       }
-    }, 100); // Adjust the interval time as needed
+    }, 75);
 
-    // Clear the interval on component unmount
-    return () => clearInterval(titleInterval);
-  }, [originalTitle]);
+    return () => {
+      clearInterval(titleInterval);
+      setTitle(originalTitle);
+      setCursorVisible(false);
+    };
+  }, []);
 
   return (
     <div className='home-container' id='home'>
@@ -36,7 +40,7 @@ function Home() {
         </div>
         <div className='titles'>
           <h1 className='title-name'>Ivan Roussev</h1>
-          <h1 className='software-engineer-title'>{title}</h1>
+          <h1 className='catch-phrase'>{title}</h1>
           <div className='social-icons'>
             <a href='https://github.com/IvanRoussev' rel='noreferrer'>
               <img
@@ -55,8 +59,8 @@ function Home() {
             <button className='cv-button'>
               <a
                 className='download-cv-button'
-                href='../ivanroussev-resume-2024.pdf'
-                download='ivanroussev-cv.pdf'
+                href={ivanresume}
+                download='IvanRoussev-Resume.pdf'
               >
                 Download CV
               </a>

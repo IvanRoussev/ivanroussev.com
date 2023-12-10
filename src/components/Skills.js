@@ -1,22 +1,21 @@
-import Golang from '../images/icons8-golang.svg';
-import Python from '../images/icons8-python.svg';
-import Javascript from '../images/icons8-javascript.svg';
-import Mongo from '../images/icons8-mongodb.svg';
-import Mysql from '../images/icons8-mysql.svg';
-import Aws from '../images/icons8-amazon-web-services.svg';
-import Azure from '../images/icons8-azure.svg';
-import Gitlab from '../images/icons8-gitlab.svg';
-import Jenkins from '../images/icons8-jenkins.svg';
-import Html from '../images/icons8-html.svg';
-import Css from '../images/icons8-css.svg';
-import Git from '../images/icons8-git.svg';
-import Docker from '../images/icons8-docker.svg';
-import Kube from '../images/icons8-kubernetes.svg';
-import iconReact from '../images/icons8-react.svg';
-import terraform from '../images/icons8-terraform.svg';
-import linux from '../images/icons8-linux-48.png';
-import PostgreSQL from '../images/icons8-postgres.svg';
-import '../BlobComponent.css';
+import Golang from '../images/golang.svg';
+import Python from '../images/python.svg';
+import Javascript from '../images/javascript.svg';
+import Mongo from '../images/mongodb.svg';
+import Mysql from '../images/mysql.svg';
+import Aws from '../images/amazon.svg';
+import Azure from '../images/azure.svg';
+import Gitlab from '../images/gitlab.svg';
+import Jenkins from '../images/jenkins.svg';
+import Html from '../images/html.svg';
+import Css from '../images/css.svg';
+import Git from '../images/git.svg';
+import Docker from '../images/docker.svg';
+import Kube from '../images/kubernetes.svg';
+import iconReact from '../images/react.svg';
+import terraform from '../images/terraform.svg';
+import linux from '../images/linux.png';
+import PostgreSQL from '../images/postgres.svg';
 
 const Skills = () => {
   return (

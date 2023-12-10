@@ -14,6 +14,7 @@
   --project-button: #456990;
   --project-headline: #2a4158;
   --orange-download-orange: #fca311;
+  --image-background: #d6dee2;
 }
 
 html,
@@ -60,7 +61,6 @@ nav {
 nav ul {
   line-height: 60px;
   list-style: none;
-  overflow: hidden;
   padding: 0;
   text-align: right;
   margin: 0;
@@ -74,8 +74,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
-  color: var(--black);
+  font-weight: 600;
+  color: var(--project-button);
 }
 
 .cv-button {
@@ -95,6 +95,7 @@ nav ul li a {
 .social-icons {
   display: flex;
   align-items: center;
+  animation: social-icons-swing 0.5s linear;
 }
 
 .linux-image {
@@ -120,13 +121,14 @@ nav ul li a {
 }
 
 .homepage-img {
-  width: 20rem;
-  border-radius: 15%;
+  border-bottom: #2a4158;
+  width: 25rem;
+  border-radius: 50%;
   margin-right: 5rem;
-  animation: swing-image 0.5s linear;
 }
 
-.software-engineer-title {
+.catch-phrase {
+  font-size: xx-large;
   color: var(--black);
 }
 
@@ -147,6 +149,7 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 16rem;
 }
 
 .about-content {
@@ -164,7 +167,9 @@ nav ul li a {
 }
 
 .about {
-  padding-top: 2rem;
+  display: flex;
+  height: 100vh;
+  padding-top: 1rem;
   background-color: var(--white);
 }
 
@@ -173,14 +178,15 @@ nav ul li a {
 }
 
 .technical-skills-title {
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .contact-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 3rem;
   margin-bottom: 20px;
+  height: 100vh;
 }
 
 .about-paragraph {
@@ -193,7 +199,10 @@ nav ul li a {
 .title-contact {
   display: flex;
   justify-content: center;
-  color: var(--white);
+}
+.contact-message {
+  display: flex;
+  justify-content: center;
 }
 
 .contact {
@@ -207,7 +216,6 @@ nav ul li a {
 .contact-button {
   background-color: var(--navy);
   border: none;
-  text-align: center;
 }
 
 .timeline img {
@@ -252,13 +260,14 @@ textarea:focus-within {
 
 .contact-form-button {
   background-color: #5bd183;
-  border-radius: 20px;
+  border-radius: 10px;
   border-color: black;
   font-size: 22px;
   padding: 10px 18px;
   text-align: center;
   display: flex;
   margin: auto;
+  border: none;
 }
 
 button:hover {
@@ -279,12 +288,13 @@ button:hover {
 }
 
 .projects {
+  padding-top: 1rem;
   height: 100vh;
   background: url(./images/pattern-background.svg) no-repeat center;
   background-size: cover;
 }
 .project-container {
-  margin-top: 10rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -306,7 +316,9 @@ button:hover {
   height: 2.5rem;
   border: none;
   border-radius: 5px;
-  background-color: var(--orange-download-orange);
+  background-color: var(--project-headline);
+  color: var(--white);
+  font-weight: 500;
 }
 
 .view-sourcecode-button a {
@@ -341,6 +353,7 @@ button:hover {
   nav ul li {
     display: inline-block;
     padding: 0px 20px;
+    font-weight: 300;
   }
 
   .dvs-header__trigger {
@@ -352,12 +365,12 @@ button:hover {
   }
 
   .main-home {
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
   }
 
   .titles {
@@ -375,11 +388,9 @@ button:hover {
   }
 
   .homepage-img {
-    width: 10rem;
-    border-radius: 50%;
+    border-radius: 20px;
+    width: 15rem;
     margin-right: 0;
-    opacity: 0;
-    animation: drop-image 0.5s linear forwards;
   }
 
   .title {
@@ -395,8 +406,8 @@ button:hover {
     font-size: xx-large;
   }
 
-  .software-engineer-title {
-    font-size: medium;
+  .catch-phrase {
+    font-size: small;
   }
 
   .skills {
@@ -416,6 +427,13 @@ button:hover {
     width: 15rem;
     height: 20rem;
     margin-bottom: 50px;
+  }
+
+  .about {
+    display: flex;
+    height: max-content;
+    padding-top: 1rem;
+    background-color: var(--white);
   }
 }
 
@@ -440,5 +458,17 @@ button:hover {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes social-icons-swing {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
