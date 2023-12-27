@@ -1,4 +1,11 @@
+import { message } from 'antd';
+
 function Contact() {
+  const submitedForm = () => {
+    const successMessage = `Successfully Sent message to Ivan `;
+    message.success(successMessage);
+  };
+
   return (
     <div className='contact-container' id='contact'>
       <div className='contact-form'>
@@ -34,7 +41,11 @@ function Contact() {
             autoComplete='off'
             required
           ></textarea>
-          <button className='contact-form-button' type='submit'>
+          <button
+            className='contact-form-button'
+            type='submit'
+            onlick={submitedForm}
+          >
             Send
           </button>
         </form>

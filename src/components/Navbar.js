@@ -4,7 +4,8 @@ import hamburgerStack from '../images/hamburgermenu.svg';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = (event) => {
+    event.preventDefault();
     setIsOpen((open) => !open);
   };
 
@@ -13,6 +14,7 @@ function Navbar() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
     }
   };
 
@@ -39,7 +41,7 @@ function Navbar() {
               </li>
               <li>
                 <a href='#' onClick={(e) => scrollToSection('about', e)}>
-                  About
+                  About Me
                 </a>
               </li>
               <li>

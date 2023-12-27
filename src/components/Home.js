@@ -1,7 +1,11 @@
 import ivanPic from '../images/ivan-no-background.png';
 import githubIcon from '../images/github.svg';
 import linkedinIcon from '../images/linkedin.svg';
-import ivanresume from '../ivan-resume-2024.pdf';
+// import ivanresume from '../ivan-resume-2024.pdf';
+import { DownloadOutlined } from '@ant-design/icons';
+import { message } from 'antd';
+
+import { Button } from 'antd';
 import React, { useEffect, useState } from 'react';
 
 function Home() {
@@ -9,6 +13,11 @@ function Home() {
   const [cursorVisible, setCursorVisible] = useState(true);
   const originalTitle = 'Building Things That Truly Matter';
   const cursorChar = '|';
+
+  const handleDownloadResume = () => {
+    const successMessage = `Updating Resume 👨🏼‍💻. Currently unavailable! `;
+    message.warning(successMessage);
+  };
 
   useEffect(() => {
     let index = 0;
@@ -21,6 +30,7 @@ function Home() {
 
       if (index > originalTitle.length) {
         clearInterval(titleInterval);
+        setTitle(originalTitle);
         setCursorVisible(false);
       }
     }, 75);
@@ -39,8 +49,11 @@ function Home() {
           <img className='homepage-img' src={ivanPic} alt='ivan-pic-homepage' />
         </div>
         <div className='titles'>
-          <h1 className='title-name'>Ivan Roussev</h1>
-          <h1 className='catch-phrase'>{title}</h1>
+          <h1 className='title-name'>
+            Ivan <strong>Roussev</strong>
+            <strong className='orange-dot'>,</strong>
+          </h1>
+          <h2 className='catch-phrase'>{title}</h2>
           <div className='social-icons'>
             <a href='https://github.com/IvanRoussev' rel='noreferrer'>
               <img
@@ -56,15 +69,21 @@ function Home() {
                 alt='linkedin-icons'
               />
             </a>
-            <button className='cv-button'>
+            <Button
+              className='download-button'
+              type='primary'
+              icon={<DownloadOutlined />}
+              size='middle'
+              onClick={handleDownloadResume}
+            >
               <a
                 className='download-cv-button'
-                href={ivanresume}
-                download='IvanRoussev-Resume.pdf'
+                // href={ivanresume}
+                // download='IvanRoussev-Resume.pdf'
               >
                 Download CV
               </a>
-            </button>
+            </Button>
           </div>
         </div>
       </div>
