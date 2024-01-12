@@ -1,7 +1,7 @@
 import ivanPic from '../images/ivan-no-background.png';
 import githubIcon from '../images/github.svg';
 import linkedinIcon from '../images/linkedin.svg';
-// import ivanresume from '../ivan-resume-2024.pdf';
+import ivanresume from '../ivan-resume.pdf';
 import { DownloadOutlined } from '@ant-design/icons';
 import { message } from 'antd';
 
@@ -15,8 +15,8 @@ function Home() {
   const cursorChar = '|';
 
   const handleDownloadResume = () => {
-    const successMessage = `Updating Resume 👨🏼‍💻. Currently unavailable! `;
-    message.warning(successMessage);
+    const successMessage = `Downloaded CV`;
+    message.success(successMessage);
   };
 
   useEffect(() => {
@@ -78,8 +78,8 @@ function Home() {
             >
               <a
                 className='download-cv-button'
-                // href={ivanresume}
-                // download='IvanRoussev-Resume.pdf'
+                href={ivanresume}
+                download='IvanRoussev-Resume.pdf'
               >
                 Download CV
               </a>

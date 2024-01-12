@@ -170,6 +170,22 @@ nav ul li a {
   background-color: var(--white);
 }
 
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bcit-logo {
+  height: 5rem;
+  margin-top: 2rem;
+}
+.bcit-title {
+  margin-left: 15px;
+}
+
+.bcit-info {
+}
 .projects-content {
   text-align: center;
 }

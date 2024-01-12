@@ -1,4 +1,6 @@
 import Skills from './Skills';
+import bcit from '../images/bcit.jpg';
+import aws from '../images/amazon.svg';
 function About() {
   return (
     <div id='about' className='about'>
@@ -18,13 +20,36 @@ function About() {
             now ready to join the workforce to provide an impact in the tech
             field.
           </p>
-          <p className='about-paragraph'></p>
+        </div>
+        <div className='education'>
+          <h3>Education</h3>
+          <div className='education-container'>
+            <img className='bcit-logo' src={bcit} />
+            <div className='bcit-info'>
+              <h4 className='bcit-title'>
+                British Columbia Institute of Technology
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div className='certificates'>
+          <h3>Certificates</h3>
+          <div className='certificates-container'>
+            <img className='aws-logo' src={aws} />
+            <div className='bcit-info'>
+              <h4 className='bcit-title'>Certified Cloud Practitioner</h4>
+              <button>View Certificate</button>
+            </div>
+          </div>
         </div>
         <div>
           <h3 className='technical-skills-title'>My Technical Skills</h3>
           <div className='blob'>
             <Skills />
           </div>
+        </div>
+        <div>
+          <h3>Timeline</h3>
         </div>
       </div>
     </div>
