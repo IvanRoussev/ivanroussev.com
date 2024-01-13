@@ -38,7 +38,11 @@ function About() {
             <img className='aws-logo' src={aws} />
             <div className='bcit-info'>
               <h4 className='bcit-title'>Certified Cloud Practitioner</h4>
-              <button>View Certificate</button>
+              <button>
+                <a src='https://www.credly.com/badges/6144fc56-ef0e-4da1-af6d-7025732199f7/linked_in_profile'>
+                  View Certificate
+                </a>
+              </button>
             </div>
           </div>
         </div>
