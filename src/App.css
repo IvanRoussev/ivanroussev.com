@@ -9,7 +9,7 @@
   --black: #2b2d42;
   --grey: #8d99ae;
   --white: #edf2f4;
-  --light-red: #ef233c;
+  --light-red: #23bfef;
   --dark-red: #d90429;
   --project-button: #456990;
   --project-headline: #2a4158;
@@ -165,7 +165,7 @@ nav ul li a {
 
 .about {
   display: flex;
-  height: 100vh;
+
   padding-top: 1rem;
   background-color: var(--white);
 }
@@ -175,7 +175,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .bcit-logo {
   height: 5rem;
   margin-top: 2rem;
@@ -185,6 +185,81 @@ nav ul li a {
 }
 
 .bcit-info {
+} */
+.education, .certificates {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.education h3, .certificates h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Education container */
+.education-container, .certificates-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px; /* Adds space between sections */
+}
+
+/* BCIT and AWS logo styling */
+.bcit-logo, .aws-logo {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.bcit-info, .cert-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bcit-info h4, .cert-info h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.bcit-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Certificate button styling */
+.cert-button {
+  margin-top: 10px;
+}
+
+.cert-button a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0073e6; /* A shade of blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cert-button a:hover {
+  background-color: #005bb5; /* Darker blue on hover */
 }
 .projects-content {
   text-align: center;
@@ -297,6 +372,10 @@ button:hover {
 
 .skills div {
   margin: 10px 10px 10px 10px;
+}
+
+.helm-svg {
+  width: 50px;
 }
 
 .projects {

@@ -16,6 +16,9 @@ import iconReact from '../images/react.svg';
 import terraform from '../images/terraform.svg';
 import linux from '../images/linux.png';
 import PostgreSQL from '../images/postgres.svg';
+import helm from '../images/helm.svg'
+import grafana from '../images/grafana.svg'
+import prometheus from '../images/prometheus.svg'
 
 const Skills = () => {
   return (
@@ -49,12 +52,18 @@ const Skills = () => {
           <h3>Containerization</h3>
           <img src={Docker} alt='docker' />
           <img src={Kube} alt='kube' />
+          <img className='helm-svg' src={helm} alt='helm' />
         </div>
         <div className='Ci'>
           <h3>CI/CD</h3>
           <img src={Jenkins} alt='jenkins' />
           <img src={Gitlab} alt='github' />
           <img src={Git} alt='git' />
+        </div>
+        <div className='monitoring'>
+          <h3>Monitoring</h3>
+          <img src={grafana} alt='grafana' />
+          <img src={prometheus} alt='promethues' />
         </div>
         <div className='os'>
           <h3>OS</h3>

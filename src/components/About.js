@@ -21,40 +21,17 @@ function About() {
             field.
           </p>
         </div>
-        <div className='education'>
-          <h3>Education</h3>
-          <div className='education-container'>
-            <img className='bcit-logo' src={bcit} />
-            <div className='bcit-info'>
-              <h4 className='bcit-title'>
-                British Columbia Institute of Technology
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div className='certificates'>
-          <h3>Certificates</h3>
-          <div className='certificates-container'>
-            <img className='aws-logo' src={aws} />
-            <div className='bcit-info'>
-              <h4 className='bcit-title'>Certified Cloud Practitioner</h4>
-              <button>
-                <a src='https://www.credly.com/badges/6144fc56-ef0e-4da1-af6d-7025732199f7/linked_in_profile'>
-                  View Certificate
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
+        
+      
         <div>
           <h3 className='technical-skills-title'>My Technical Skills</h3>
           <div className='blob'>
             <Skills />
           </div>
         </div>
-        <div>
+       {/* <div>
           <h3>Timeline</h3>
-        </div>
+        </div> */}
       </div>
     </div>
   );
